@@ -1,0 +1,40 @@
+<html>
+   <head>
+      <link href=' http://fonts.googleapis.com/css?family=Droid+Sans' rel='stylesheet' type='text/css'>
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+      <style>
+      img {
+        border: 3px solid #555;
+      }
+      </style>
+   </head>
+   <body>
+      <div class="container-fluid text-white bg-dark border">
+         <h1 class="text-white bg-dark">>>Test-Results</h1>
+      </div>
+      
+      <div class="container">
+
+         <div class="image-parent">
+               <b>TEST IMAGE</b>
+               <img src="{{ url_for('static' , filename = test) }}" class="img-fluid" border="5px solid Black" alt="Test">
+         </div>
+
+         <div class="image-parent">
+               <b>INFERENCE</b>
+               <img src="{{url_for('static' , filename = result)}}" class="img-fluid"  alt="Result">
+         </div>
+      </div>
+      
+
+            
+            
+      
+   </body>
+</html>
+

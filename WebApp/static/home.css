@@ -1,0 +1,27 @@
+.bg-overlay {
+    background: linear-gradient(rgba(0,0.7,0,0), rgba(0,0,0,1)), url("https://i.pinimg.com/originals/2e/e6/99/2ee6998e34c3e2eff7b894c66cfc5267.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    color: #fff;
+    height: 900px;
+    width : 100%;
+    padding-top: 50px;
+}
+
+h1{
+    font-family: "Open Sans";
+    src: url("/fonts/OpenSans-Regular-webfont.woff2") format("woff2"),
+}
+
+#ROW{
+
+    margin-top: 110px;
+    padding-top: 50px;
+}
+
+#ROW2{
+
+    margin-top: 60px;
+   
+}

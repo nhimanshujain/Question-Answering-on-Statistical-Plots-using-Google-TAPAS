@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+<head>
+	
+	<title>Home</title>
+	
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+	<script type="text/javascript" src="https://gc.kis.v2.scr.kaspersky-labs.com/FD126C42-EBFA-4E12-B309-BB3FDD723AC1/main.js?attr=0ugL6jGvkfQcz2F8sGHzEpHWDdwNBoiOKm_Yt4TkbT1UtxBuMRNiqMEgDQLb3OlrvwBsQVHAw4838rbd2Af6ii0-60iSNMS2akJWnY7WURMreN4SltInQDBs5CuIvXcMZuXWr0iQ4koHjG3J3LZnUhvi1-1_QWmen2xgasJGDQb8n5HbSl_baAs1Jy4yc8sOtjOI330MKSc0ZhEQkKpoMOCqXv0L_LmwxDltStwEJUTG7SBjIV8Nkx6V_E_qDaNYACIATjFNROgV5aJIP6ktbDp2NBBIaHKeR3feqQ1814iCfkIwyWj_Ra_f2bk6dopegUZ7wnMVbV82CYNRuedfCuUCEQy5J3rd6uVXuXacYZUhe41K2jBahCqUj4_g-rm6WYoKOQ0xM5jQjKUsTMb5HFecWxaaEAItXqhCZYtMdr_AGYGScjSPhoxqsL_OawQvRiNpoT_TrZ2JkG9M8ooOTQ" charset="UTF-8"></script><script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <style>
+
+    .bg-overlay {
+    background: linear-gradient(rgba(0,0.7,0,0), rgba(0,0,0,1)), url("https://i.pinimg.com/originals/2e/e6/99/2ee6998e34c3e2eff7b894c66cfc5267.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    color: #fff;
+    height: 900px;
+    width : 100%;
+    padding-top: 50px;
+    }
+
+    h1{
+        font-family: "Open Sans";
+        src: url("/fonts/OpenSans-Regular-webfont.woff2") format("woff2"),
+    }
+
+    #ROW{
+
+        margin-top: 110px;
+        padding-top: 50px;
+    }
+
+    #ROW2{
+
+        margin-top: 60px;
+      
+    }
+
+    #loader {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    z-index: 1;
+    display : none;
+    width: 70px;
+    height: 70px;
+    margin: -76px 0 0 -76px;
+    border: 16px solid #f3f3f3;
+    border-radius: 50%;
+    border-top: 16px solid #3498db;
+    -webkit-animation: spin 2s linear infinite;
+    animation: spin 2s linear infinite;
+  }
+
+  @-webkit-keyframes spin {
+    0% { -webkit-transform: rotate(0deg); }
+    100% { -webkit-transform: rotate(360deg); }
+  }
+
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+
+
+
+  </style>
+</head>
+<body>
+  <div id="loader"></div>
+	<div class="container-fluid  bg-overlay" id = "BG">
+		<div class="d-flex justify-content-center">
+			<h1 class="display-4">VQA ON STATISTICAL PLOTS</h1>			
+		</div>
+    
+		<div class="container-fluid">
+				<div class="row" id = "ROW">
+
+					<div class="col-sm-4">
+
+							<div class="d-flex justify-content-center">
+						  			
+						  			<img id = "TEST_IMAGE" width="450" height="400" alt = ".">
+
+						 	</div>
+					</div>
+					<div class="col-sm-4">
+              
+							 <form action="/Results" method="POST" id = "data"enctype="multipart/form-data" onsubmit="myfoo()">
+								 <div class="custom-file">
+									  	     
+											 <input type="file" accept="image/gif, image/jpeg, image/png" class="custom-file-input" id="customFile" name = "DUMMY_IMAGE">
+											 <label class="custom-file-label" for="customFile">Choose file</label>
+											
+								</div>
+								<div id = "QUERIES">
+											<input type="text"  class="form-control m-input" name="Query1" placeholder="Enter Query" style="margin-top: 10px;">
+								</div>
+								<div class="row">
+									<div class="col-sm-4">
+										<button name = "Adder" id="addRow" type="button" class="btn btn-info" style="margin-top: 10px;">Add Query</button>
+									</div>
+									<div class="col-sm-4">
+										<button id="SubmitBtn" name = "Submitter" type="submit" class="btn btn-success" style="margin-top: 10px;">Submit</button>
+									</div>
+								</div>
+							</form>
+					</div>
+					
+
+				</div>
+		</div>
+		
+			
+			 
+			
+	</div> 
+	
+</body>
+<script>
+
+	var x = 2
+	$(".custom-file-input").on("change", function() {
+  var fileName = $(this).val().split("\\").pop();
+  $(this).siblings(".custom-file-label").addClass("selected").html(fileName);
+  document.getElementById("TEST_IMAGE").src =  window.URL.createObjectURL((this).files[0]);
+});
+
+	 $("#addRow").click(function () {
+        var html = '';
+       
+        html += '<input type="text" name="Query' + x.toString() +'"'+ ' class="form-control m-input" placeholder="Enter Query" autocomplete="off" style="margin-top: 10px;">';
+        x++;
+        
+        console.log(html,x)
+        
+        $('#QUERIES').append(html);
+    });
+
+    function myfoo() {
+    myVar = setTimeout(showPage, 3000);
+
+    function showPage() {
+  document.getElementById("loader").style.display = "block";
+  document.getElementById("TEST_IMAGE").style.display = "none";
+  document.getElementById("data").style.display = "none";
+  document.getElementById("BG").style.filter = "blur(4px)";
+
+
+  
+}
+}
+
+	
+</script>
+</html>

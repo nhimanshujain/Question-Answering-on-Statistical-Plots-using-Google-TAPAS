@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+	
+	<title>Home</title>
+	<link src = "{{url_for('static' , filename = 'home.css')}}" rel="stylesheet" href="home.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</head>
+<body>
+	<div class="container-fluid  bg-overlay">
+		<div class="d-flex justify-content-center">
+			<h1 class="display-4">VQA ON STATISTICAL PLOTS</h1>			
+		</div>
+		<div class="container-fluid">
+				<div class="row" id = "ROW">
+
+					<div class="col-sm-4">
+
+							<div class="d-flex justify-content-center">
+						  			
+						  			<img id = "TEST_IMAGE" width="450" height="400" alt = ".">
+
+						 	</div>
+					</div>
+					<div class="col-sm-4">
+							 <form action="/Results" method="POST" id = "data"enctype="multipart/form-data" >
+								 <div class="custom-file">
+									  	     
+											 <input type="file" accept="image/gif, image/jpeg, image/png" class="custom-file-input" id="customFile" name = "DUMMY_IMAGE">
+											 <label class="custom-file-label" for="customFile">Choose file</label>
+											
+								</div>
+								<div id = "QUERIES">
+											<input type="text"  class="form-control m-input" name="Query[]" placeholder="Enter Query" style="margin-top: 10px;">
+								</div>
+								<div class="row">
+									<div class="col-sm-4">
+										<button name = "Adder" id="addRow" type="button" class="btn btn-info" style="margin-top: 10px;">Add Query</button>
+									</div>
+									<div class="col-sm-4">
+										<button id="SubmitBtn" name = "Submitter" type="submit" class="btn btn-success" style="margin-top: 10px;">Submit</button>
+									</div>
+								</div>
+							</form>
+					</div>
+					
+
+				</div>
+		</div>
+		
+			
+			 
+			
+	</div> 
+	
+</body>
+<script>
+
+	var x = 2
+	$(".custom-file-input").on("change", function() {
+  var fileName = $(this).val().split("\\").pop();
+  $(this).siblings(".custom-file-label").addClass("selected").html(fileName);
+  document.getElementById("TEST_IMAGE").src =  window.URL.createObjectURL((this).files[0]);
+});
+
+	 $("#addRow").click(function () {
+        var html = '';
+       
+        html += '<input type="text" name="Query[]" class="form-control m-input" placeholder="Enter Query" autocomplete="off" style="margin-top: 10px;">';
+        x++;
+        console.log(html)
+        
+        $('#QUERIES').append(html);
+    });
+
+	
+</script>
+</html>
