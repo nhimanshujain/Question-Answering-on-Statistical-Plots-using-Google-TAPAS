@@ -1,4 +1,4 @@
-# TapasQA: Question Answering on Statistical Plots using Google TAPAS
+# TapasQA - Question Answering on Statistical Plots using Google TAPAS
 Details....
 
 ## Authors
