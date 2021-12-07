@@ -29,6 +29,9 @@ commands
 
 2) QA Testing
 
+### *Setup*
+use requirements.txt file
+
 // Directory Structure
 
 ### *Folder Structure*
