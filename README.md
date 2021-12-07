@@ -5,9 +5,19 @@ Details....
 
 [Himanshu Jain](https://github.com/nhimanshujain) <br>
 [Sooryanath IT](https://github.com/SooryanathIT) <br>
-[Sneha Jayaraman]()
+[Sneha Jayaraman](https://github.com/SnehaJayaraman) <br>
 
-# How to use QA-Tapas
+# *Folder Description*
+1) [Traning](https://github.com/nhimanshujain/TapasQA/tree/main/Training) - Contains binary classifier model and configuration files
+2) [Testing](https://github.com/nhimanshujain/TapasQA/tree/main/Testing) - Contains test files for PED stage and Table QA stage
+3) [Evaluation](https://github.com/nhimanshujain/TapasQA/tree/main/Training) - Contains binary classifier model and configuration files
+4) [Traning](https://github.com/nhimanshujain/TapasQA/tree/main/Training) - Contains binary classifier model and configuration files
+5) [Traning](https://github.com/nhimanshujain/TapasQA/tree/main/Training) - Contains binary classifier model and configuration files
+
+
+
+
+
 
 ## Setup 
 1. Details...
