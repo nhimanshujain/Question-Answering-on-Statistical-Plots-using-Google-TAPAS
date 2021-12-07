@@ -23,5 +23,36 @@ commands
 
 
 
+## Evaluation
+
+1) CSV Generation
+
+2) QA Testing
+
+// Directory Structure
+
+### *Folder Structure*
+```
++
+|--- Evaluation
+|     |
+|     |--- Binary_Classifier (dir)
+|     |--- plotqa
+|            |--- TEST
+|                  |--- final_csv (dir)
+|                  |--- png (dir)
+|                  |--- annotations.json
+|                  |--- qa_pairs.json
+|     |--- results
+|     |--- tabfact_model (auto-generated)
+|     |--- tapas_model (auto-generated)
+|     |--- Vertical.ipynb (file)
+|
++
+
+```
+
+
+
 ## Results
 
