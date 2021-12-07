@@ -7,6 +7,16 @@ Details....
 [Sooryanath IT](https://github.com/SooryanathIT) <br>
 [Sneha Jayaraman](https://github.com/SnehaJayaraman) <br>
 
+
+
+# *TapasQA Architecture*
+[<img src="/Results/architecture.png" width="1080"/>](/Results/architecture.png)
+
+
+
+
+
+
 # *Folder Description*
 1) [Traning](/Training) - Contains binary classifier model and configuration files
 2) [Testing](/Testing) - Contains test files for PED stage and Table QA stage
@@ -19,42 +29,57 @@ Details....
 
 
 
-# *TapasQA Architecture*
-[<img src="/Results/architecture.png" width="1080"/>](/Results/architecture.png)
-
-# *Plot Element Detection stage*
-## *Object Detection*
-Content...
-
-## *Feature Extraction*
-Content...
-
-# *Optical Character Recognition stage*
-Content...
-
-# *Semi-Structured Table Generation stage*
-Content...
 
 
-# *Table QA stage*
-Content...
 
-## *Binary Classifier*
-Content...
-[<img src="/Training/Binary_Classifier/binary_classifier_architecture.png" height="256"/>](/Training/Binary_Classifier/binary_classifier_architecture.png)
 
-## *Tapas*
-Content...
 
-## *Tabfact*
-Content...
+
+# *Files Description*
+## *Plot Element Detection stage*
+1) [JSON Generation](/PED/Plot_Elements_Detection_JSON_Generation.ipynb) - Extracts bounding box predictions using Dectectron2
+
+## *Optical Character Recognition stage*
+1) [OCR Recognition](/Evaluation/src/ocr_table_generation/) - Extracts text data from the bounding box of the plots
+
+## *Semi-Structured Table Generation stage*
+1) [TO Fill](/Evaluation/src/ocr_table_generation/) - 
+
+
+## *Table QA stage*
+
+### *Binary Classifier*
+1) [Training](/Training/Binary_Classifier/binary_classifier_training.ipynb) - This file is used to train the binary classifier model
+2) [Evaluation](/Training/Binary_Classifier/models) - Saved model is used to infer open-ended question or Yes/No question
+
+### *Tapas and Tabfact model*
+1) [Testing](/Testing) - Tapas and Tabfact models are tested for Horizontal, Vertical, Dot and Dot-Line plots
+2) [Evaluation](/Evaluation) - Tapas and Tabfact models are evaluated for 8k images (2k per category)
+
+
+
 
 
 
 
 
 # *Data*
-[PlotQA dataset](https://github.com/NiteshMethani/PlotQA/blob/master/PlotQA_Dataset.md) is used for visual question answering on statistical plots
+> *[PlotQA dataset](https://github.com/NiteshMethani/PlotQA/blob/master/PlotQA_Dataset.md)* is used for visual question answering on statistical plots
+
+
+
+
+
+
+
+
+# *Evaluation of PED model*
+To be filled
+
+
+
+
+
 
 
 
@@ -117,6 +142,10 @@ after csv file generation and environment setup, to produce the results
 
 
 
+
+
+
+
 # *Results*
 
 ### PED Stage
@@ -124,6 +153,11 @@ Insert results img here
 
 ### Table QA Stage
 [<img src="/Results/tapas_qa_results.jpg" width="1080"/>](/Results/tapas_qa_results.jpg)
+
+
+
+
+
 
 
 
