@@ -18,14 +18,14 @@ Details....
 
 
 # *Folder Description*
-1) [Traning](/Training) - Contains binary classifier model and configuration files
+1) [Training](/Training) - Contains binary classifier model and configuration files
 2) [Testing](/Testing) - Contains test files for PED stage and Table QA stage
 3) [Evaluation](/Evaluation) - Contains code for CSV generation and Evaluation of Table QA stage
 4) [Results](/Results) - Contains results for 8k images tested
 5) [WebApp](/WebApp) - Contains code files related to the Flask application of the project
-6) [Documents](/Documents) - Contains all the documents from project Phase-1 and Phase-2
-7) [End-To-End](/End-To-End) - Contains python notebook for complete end-to-end execution of the TapasQA model
-8) [Miscellaneous](/Miscellaneous) - Contains additional code files
+6) [End-To-End](/End-To-End) - Contains python notebook for complete end-to-end execution of the TapasQA model
+7) [Miscellaneous](/Miscellaneous) - Contains additional code files
+8) [Documents](/Documents) - Contains all the documents from project Phase-1 and Phase-2
 
 
 
@@ -134,8 +134,11 @@ Create the folder structure as mentioned
 
 
 ### 4) Execution 
-Run the files - Vertical.ipynb, Horizontal.ipynb, DOT_LINE.ipynb
-after csv file generation and environment setup, to produce the results
+Run the following files after csv file generation and environment setup, to produce the results
+> Vertical.ipynb <br>
+> Horizontal.ipynb <br>
+> DOT_LINE.ipynb
+
 
 
 
