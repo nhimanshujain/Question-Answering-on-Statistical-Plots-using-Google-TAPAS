@@ -1,5 +1,10 @@
 # TapasQA - Question Answering on Statistical Plots using Google TAPAS
-Details....
+It is a Visual Question Answering system which accepts statistical plots along with questions on the plot (with respect to the elements of the plot) to provide answers to the questions posed.
+
+Benefit: Helps data analysts question and understand plots on a large scale, and automate the decision-making capabilities.
+
+Scope: Plots = Dot, Line, Bar (Vertical, Horizontal, Grouped), Questions = Open-ended, Boolean (Support/ Refute) 
+
 
 ## Authors
 
@@ -37,13 +42,13 @@ Details....
 
 # *Files Description*
 ## *Plot Element Detection stage*
-1) [JSON Generation](/PED/Plot_Elements_Detection_JSON_Generation.ipynb) - Extracts bounding box predictions using Dectectron2
+1) [JSON Generation](/Training/PED/Plot_Elements_Detection_JSON_Generation.ipynb) - Extracts bounding box predictions using Dectectron2
 
 ## *Optical Character Recognition stage*
 1) [OCR Recognition](/Evaluation/src/ocr_table_generation/) - Extracts text data from the bounding box of the plots
 
 ## *Semi-Structured Table Generation stage*
-1) [TO Fill](/Evaluation/src/ocr_table_generation/) - 
+1) [Table-fillup](/Evaluation/src/ocr_table_generation/) - Information extracted out of textual and visual elements is structured into a table
 
 
 ## *Table QA stage*
