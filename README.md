@@ -1,9 +1,11 @@
 # TapasQA - Question Answering on Statistical Plots using Google TAPAS
 It is a Visual Question Answering system which accepts statistical plots along with questions on the plot (with respect to the elements of the plot) to provide answers to the questions posed.
 
-Benefit: Helps data analysts question and understand plots on a large scale, and automate the decision-making capabilities.
+**Benefit**: Helps data analysts question and understand plots on a large scale, and automate the decision-making capabilities.
 
-Scope: Plots = Dot, Line, Bar (Vertical, Horizontal, Grouped), Questions = Open-ended, Boolean (Support/ Refute) 
+**Scope**: <br>
+Plots = _Dot, Line, Bar (Vertical, Horizontal, Grouped)_ <br>
+Questions = _Open-ended, Boolean (Yes / No)_
 
 
 ## Authors
@@ -15,7 +17,7 @@ Scope: Plots = Dot, Line, Bar (Vertical, Horizontal, Grouped), Questions = Open-
 
 
 # *TapasQA Architecture*
-[<img src="/Results/architecture.png" width="1080"/>](/Results/architecture.png)
+[<img src="/Results/img/architecture.png" width="1080"/>](/Results/architecture.png)
 
 
 
@@ -48,7 +50,7 @@ Scope: Plots = Dot, Line, Bar (Vertical, Horizontal, Grouped), Questions = Open-
 1) [OCR Recognition](/Evaluation/src/ocr_table_generation/) - Extracts text data from the bounding box of the plots
 
 ## *Semi-Structured Table Generation stage*
-1) [Table-fillup](/Evaluation/src/ocr_table_generation/) - Information extracted out of textual and visual elements is structured into a table
+1) [Table Fillup](/Evaluation/src/ocr_table_generation/) - Information extracted out of textual and visual elements is structured into a table
 
 
 ## *Table QA stage*
@@ -157,10 +159,16 @@ Run the following files after csv file generation and environment setup, to prod
 # *Results*
 
 ### PED Stage
-Insert results img here
+
+#### AVERAGE PRECISION AT DIFFERENT NUMBER OF ITERATIONS
+> [<img src="/Results/img/ped_results.png" width="210" height="230"/>](/Results/img/ped_results.png) <br>
+
+#### PED EVALUATION
+> [<img src="/Results/img/average_precision.png" width="512" height="150"/>](/Results/img/average_precision.png)
 
 ### Table QA Stage
-[<img src="/Results/tapas_qa_results.jpg" width="1080"/>](/Results/tapas_qa_results.jpg)
+#### AVERAGE ACCURACY FOR DIFFERENT PLOT TYPES
+> [<img src="/Results/img/table_qa_result.png" width="750" />](/Results/img/table_qa_result.png)
 
 
 
