@@ -44,7 +44,7 @@ Questions = _Open-ended, Boolean (Yes / No)_
 
 # *Files Description*
 ## *Plot Element Detection stage*
-1) [JSON Generation](/Training/PED/Plot_Elements_Detection_JSON_Generation.ipynb) - Extracts bounding box predictions using Dectectron2
+1) [JSON Generation](/Training/PED/Plot_Elements_Detection_JSON_Generation.ipynb) - Extracts bounding box predictions using Detectron2
 
 ## *Optical Character Recognition stage*
 1) [OCR Recognition](/Evaluation/src/ocr_table_generation/) - Extracts text data from the bounding box of the plots
@@ -81,11 +81,8 @@ Questions = _Open-ended, Boolean (Yes / No)_
 
 
 # *Evaluation of PED model*
-To be filled
 
-
-
-
+Execute the Testing Section in [PED_Testing](/Training/PED/Plot_Elements_Detection_JSON_Generation.ipynb) using the weights of the final saved model . The metrics alongside the json predictions will be generated .
 
 
 
