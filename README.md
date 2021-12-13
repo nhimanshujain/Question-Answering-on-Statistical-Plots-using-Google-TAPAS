@@ -176,9 +176,19 @@ Run the following files after csv file generation and environment setup, to prod
 
 
 # *Web App* (To be filled)
-1) Setup
-2) Start
-
+### Setup
+  i) There are 2 portions / 2 web-apps to demonstrate the functionality of the pipeline
+  ii) [Web-App-1](https://github.com/nhimanshujain/TapasQA/blob/main/WebApp/Web-App-1) demonstrates the conversion of graph/plot data to tabular equivalent
+  iii)[Web-App-2](https://github.com/nhimanshujain/TapasQA/blob/main/WebApp/Web-App-2.ipynb) demonstrates the Table-QA Stage.
+  iv) Open both the notebooks simultaenously under different tabs.
+  
+###Start
+  i)Sequentially run the cells of Web-App-1 and start the web-app designed using flask . Do the same for Web-App-2
+  ii)Input the image/plot in the UI and wait until the csv_equivalent is generated through Web-App-1's backend.
+  iii)Collect / download the CSV table .
+  iv)Upload the CSV downloaded in Web-App-2's UI and enter the queries related to the graph/plot and wait till the answers are processed.
+  v)The results(answers) will displayed onto the screen.
+  
 
 
 
