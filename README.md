@@ -175,7 +175,7 @@ Run the following files after csv file generation and environment setup, to prod
 
 
 
-# *Web App* (To be filled)
+# *Web App* 
 ### *Setup*
   1. There are 2 portions / 2 web-apps to demonstrate the functionality of the pipeline
   2. [Web-App-1](https://github.com/nhimanshujain/TapasQA/blob/main/WebApp/Web-App-1) demonstrates the conversion of graph/plot data to tabular equivalent
