@@ -1,0 +1,47 @@
+VisQA = https://github.com/dhkim16/VisQA-release
+FigureQA = https://github.com/Maluuba/FigureQA
+FigureQA-Baseline = https://github.com/vmichals/FigureQA-baseline
+CloudCV: Visual Question Answering (VQA) = http://vqa.cloudcv.org/
+VQA Demo = https://github.com/iamaaditya/VQA_Demo (or) https://iamaaditya.github.io/2016/04/visual_question_answering_demo_notebook
+VQA = https://visualqa.org/
+GQA = https://cs.stanford.edu/people/dorarad/gqa/index.html
+List of resources dedicated to visual(image) question answering = https://github.com/DerekDLP/VQA-papers
+Curated List = https://github.com/jokieleung/awesome-visual-question-answering
+
+
+
+
+
+
+
+Papers :
+
+1) https://dhkim16.github.io/vis-qa/pdf/paper.pdf
+2) https://arxiv.org/pdf/1806.04655.pdf (OR) https://ieeexplore.ieee.org/abstract/document/8851830
+3) https://ieeexplore.ieee.org/abstract/document/8852427
+4) https://arxiv.org/pdf/1909.00997.pdf
+5) https://faculty.ucmerced.edu/mhyang/papers/wacv2020_360_vqa.pdf
+6) https://arxiv.org/pdf/1911.04058.pdf
+7) https://ieeexplore.ieee.org/abstract/document/9032109
+8) https://arxiv.org/pdf/1505.00468.pdf
+9) https://arxiv.org/pdf/1801.08163.pdf
+
+
+
+
+
+
+
+
+
+Visual question answering: Datasets, algorithms, and future challenges = https://www.sciencedirect.com/science/article/abs/pii/S1077314217301170
+
+Visual question answering: A survey of methods and datasets = https://www.sciencedirect.com/science/article/abs/pii/S1077314217300772
+
+DecomVQANet: Decomposing visual question answering deep network via tensor decomposition and regression = https://www.sciencedirect.com/science/article/abs/pii/S0031320320303411
+
+Cross-modal knowledge reasoning for knowledge-based visual question answering = https://www.sciencedirect.com/science/article/abs/pii/S0031320320303666
+
+Automatic Caption Generation for Visualization Charts = https://shellywhen.github.io/assets/paper/19-Caption.pdf
+
+A Practical QA System in Restricted Domains = https://www.aclweb.org/anthology/W04-0507.pdf
